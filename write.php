@@ -1,9 +1,9 @@
 <?php
 
-$time = date('Y-m-d H:i:s') . "_";
+$time = "///". date('Y-m-d H:i:s') . "_";
 $name = $_POST['name'] . "_";
 $birthPlace = $_POST['birthPlace'] . "_";
-$email = $_POST['email'] . "///";
+$email = $_POST['email'] ;
 
 file_put_contents('data/data.txt', $time . $name . $birthPlace . $email , FILE_APPEND);
 ?>
